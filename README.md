@@ -2,35 +2,34 @@
 
 **Control Systems → Reinforcement Learning → Game Theory**
 
-A complete, practical course that builds the skills needed for intelligent energy systems (microgrids, EMS, P2P markets, battery control).
+A complete practical course for engineers who want deep, hands-on understanding of the methods used in modern energy management systems (microgrids, EMS, battery control, P2P markets).
 
-## Projects (all improved & executable)
+## Projects (executable + documented)
 
-| # | Topic | Repository | What you get |
-|---|-------|------------|--------------|
-| 1 | Control Systems | [smart-hvac-control-system](https://github.com/Helloworldceo/smart-hvac-control-system) | Room model, ON/OFF→PID, disturbances, metrics, plots, Streamlit dashboard |
-| 2 | Reinforcement Learning | [rl-solar-battery-energy-management](https://github.com/Helloworldceo/rl-solar-battery-energy-management) | Energy env, Q-Learning, DQN, PPO, learning curves, cost/peak/self-consumption metrics |
-| 3 | Game Theory | [game-theoretic-p2p-energy-market](https://github.com/Helloworldceo/game-theoretic-p2p-energy-market) | Nash solvers, double auction, strategy comparison, Stackelberg, market plots |
+| # | Topic | Repository |
+|---|-------|------------|
+| 1 | Control Systems (Smart HVAC) | [smart-hvac-control-system](https://github.com/Helloworldceo/smart-hvac-control-system) |
+| 2 | Reinforcement Learning (Solar + Battery EMS) | [rl-solar-battery-energy-management](https://github.com/Helloworldceo/rl-solar-battery-energy-management) |
+| 3 | Game Theory (P2P Energy Market) | [game-theoretic-p2p-energy-market](https://github.com/Helloworldceo/game-theoretic-p2p-energy-market) |
 
-## How to run any project
+Each project contains:
+- Working code you can run immediately (`python -m src.main`)
+- Detailed theory notes in the `docs/` folder
+- Suggested experiments and extensions
 
-```bash
-git clone <repo-url>
-cd <repo>
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-python -m src.main
-```
+## Course documents in this repository
 
-## Learning Path
+- `00_overview.md` – Big picture and learning objectives
+- `01_control_systems.md` – Guide for Project 1
+- `02_reinforcement_learning.md` – Guide for Project 2
+- `03_game_theory.md` – Guide for Project 3
+- `04_connections.md` – How the three topics relate
+- `05_interview_preparation.md` – Concepts you should be able to explain
+- `06_study_plan.md` – Suggested weekly plan and tips
 
-1. **Control** – understand feedback, modeling, PID, performance metrics
-2. **RL** – sequential decisions under uncertainty, value functions, deep RL
-3. **Game Theory** – strategic interaction, markets, multi-agent thinking
-4. **Connections** – how the three layers work together in real energy systems
+## Recommended order
 
-See the Markdown guides in this repository for detailed explanations and interview-style questions.
-
-## Status
-
-All three projects are fully executable and produce numerical results + plots out of the box.
+1. Project 1 (Control) – feedback, modeling, PID, metrics
+2. Project 2 (RL) – sequential decisions, value functions, deep RL
+3. Project 3 (Game Theory) – strategic interaction and markets
+4. Read the connections document and try to combine ideas (e.g. multi-agent RL in a market setting)
